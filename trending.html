@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OTT</title>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="trending.css">
+
+
+</head>
+
+<body>
+
+
+<div class="loader">
+<div class="spinner-border text-info"></div>
+</div>
+
+
+<div class="overlay"></div>
+
+
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+
+<div class="container-fluid">
+
+<div class="left-nav">
+
+<button class="menu-btn">
+
+<i class="ri-menu-3-line"></i>
+
+</button>
+
+<a href="index.html" class="logo">
+    <img src="Adobe Express - file.png" alt="StreamHub Logo">
+    
+</a>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search videos">
+
+<button>
+
+<i class="ri-search-line"></i>
+
+</button>
+
+</div>
+<div class="right-nav">
+
+    <a href="error.html" class="icon-btn" title="Upload">
+        <i class="ri-upload-cloud-line"></i>
+    </a>
+
+    <a href="error.html" class="icon-btn notification-btn" title="Notifications">
+        <i class="ri-notification-3-line"></i>
+        <span class="badge">3</span>
+    </a>
+
+    <a href="error.html" title="Profile">
+        <img src="https://i.pravatar.cc/40" alt="Profile" class="profile">
+    </a>
+
+</div>
+
+</nav>
+
+
+<div class="sidebar" id="sidebar">
+
+    <ul>
+
+        <li >
+            <a href="index.html">
+                <i class="ri-home-5-line"></i>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="trending.html">
+                <i class="ri-fire-line"></i>
+                <span>Trending</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="explore.html">
+                <i class="ri-compass-3-line"></i>
+                <span>Explore</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="subscriptions.html">
+                <i class="ri-video-line"></i>
+                <span>Subscriptions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="history.html">
+                <i class="ri-history-line"></i>
+                <span>History</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="liked.html">
+                <i class="ri-heart-3-line"></i>
+                <span>Liked</span>
+            </a>
+        </li>
+
+       
+
+        <li>
+            <a href="settings.html">
+                <i class="ri-settings-3-line"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="sidebar-auth mt-4 px-3">
+        <a href="login.html" class="btn btn-outline-info w-100 mb-2">
+            Login
+        </a>
+
+        <a href="register.html" class="btn btn-info w-100">
+            Sign Up
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="main-content">
+
+   
+
+    <section class="trending-hero">
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center gy-5">
+
+
+                <div class="col-lg-6 hero-content">
+
+                    <span class="hero-tag">
+                        <i class="ri-fire-fill"></i>
+                        Trending Worldwide
+                    </span>
+
+                    <h1>
+                        Discover What's
+                        <span>Trending</span>
+                        Today
+                    </h1>
+
+                    <p>
+                        Explore the most watched videos, viral shorts,
+                        live streams and creator content from around the world.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="error.html" class="btn btn-info btn-lg px-4">
+
+                            <i class="ri-play-fill"></i>
+
+                            Watch Trending
+
+                        </a>
+
+                        <a href="error.html" class="btn btn-outline-light btn-lg px-4">
+
+                            <i class="ri-compass-3-line"></i>
+
+                            Explore
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="stat-box">
+
+                            <h3>18K+</h3>
+
+                            <span>Trending Videos</span>
+
+                        </div>
+
+                        <div class="stat-box">
+
+                            <h3>220M</h3>
+
+                            <span>Daily Views</span>
+
+                        </div>
+
+                        <div class="stat-box">
+
+                            <h3>95+</h3>
+
+                            <span>Countries</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+           
+
+                <div class="col-lg-6">
+
+                    <div class="hero-image-wrapper">
+
+                        <img
+                            src="img17.webp"
+                            alt="Trending Hero"
+                            class="hero-image img-fluid">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<section class="top-trending py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="ri-fire-fill text-danger"></i>
+                Top Trending Videos
+            </h3>
+
+            <a href="error.html" class="view-all">
+                View All
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
+        <br>
+
+
+        <div class="trend-item">
+
+            <div class="trend-rank">
+
+                #1
+
+            </div>
+
+            <a href="error.html" class="trend-thumbnail">
+
+                <img src="img2.webp" alt="">
+
+                <span class="trend-duration">
+                    18:42
+                </span>
+
+            </a>
+
+            <div class="trend-content">
+
+                <h4>
+
+                    Avatar : The Way of Water Official Trailer
+
+                </h4>
+
+                <p>
+
+                    Movie Hub
+
+                    <i class="ri-verified-badge-fill verified"></i>
+
+                </p>
+
+                <span>
+
+                    5.8M Views • 2 Days Ago
+
+                </span>
+
+            </div>
+
+            <div class="trend-action">
+
+                <a href="error.html" class="watch-btn">
+
+                    <i class="ri-play-fill"></i>
+
+                    Watch
+
+                </a>
+
+            </div>
+
+        </div>
+
+      
+
+        <div class="trend-item">
+
+            <div class="trend-rank">
+
+                #2
+
+            </div>
+
+            <a href="error.html" class="trend-thumbnail">
+
+                <img src="img18.webp">
+
+                <span class="trend-duration">
+
+                    24:18
+
+                </span>
+
+            </a>
+
+            <div class="trend-content">
+
+                <h4>
+
+                    GTA VI Gameplay Reveal
+
+                </h4>
+
+                <p>
+
+                    Gaming Zone
+
+                    <i class="ri-verified-badge-fill verified"></i>
+
+                </p>
+
+                <span>
+
+                    4.2M Views • Yesterday
+
+                </span>
+
+            </div>
+
+            <div class="trend-action">
+
+                <a href="error.html" class="watch-btn">
+
+                    <i class="ri-play-fill"></i>
+
+                    Watch
+
+                </a>
+
+            </div>
+
+        </div>
+
+       
+
+        <div class="trend-item">
+
+            <div class="trend-rank">
+
+                #3
+
+            </div>
+
+            <a href="error.html" class="trend-thumbnail">
+
+                <img src="img6.webp">
+
+                <span class="trend-duration">
+
+                    15:20
+
+                </span>
+
+            </a>
+
+            <div class="trend-content">
+
+                <h4>
+
+                    Learn HTML & CSS in 2026
+
+                </h4>
+
+                <p>
+
+                    Stackly Academy
+
+                    <i class="ri-verified-badge-fill verified"></i>
+
+                </p>
+
+                <span>
+
+                    2.1M Views • 4 Days Ago
+
+                </span>
+
+            </div>
+
+            <div class="trend-action">
+
+                <a href="error.html" class="watch-btn">
+
+                    <i class="ri-play-fill"></i>
+
+                    Watch
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="editors-section py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="ri-award-fill text-warning"></i>
+                Editor's Picks
+            </h3>
+
+            <a href="error.html" class="view-all">
+                View All
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="editor-card">
+
+                    <a href="error.html">
+
+                        <div class="editor-image">
+
+                            <img src="img19.webp" class="img-fluid">
+
+                            <span class="editor-badge">
+
+                                Editor's Choice
+
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <div class="editor-content">
+
+                        <h5>
+
+                            Top 10 Movies To Watch This Weekend
+
+                        </h5>
+
+                        <p>
+
+                            Movie Central
+
+                            <i class="ri-verified-badge-fill verified"></i>
+
+                        </p>
+
+                        <span>
+
+                            3.2M Views • 5 Days Ago
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="editor-card">
+
+                    <a href="error.html">
+
+                        <div class="editor-image">
+
+                            <img src="img12.webp" class="img-fluid">
+
+                            <span class="editor-badge">
+
+                                Trending
+
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <div class="editor-content">
+
+                        <h5>
+
+                            Explore Beautiful Nature
+
+                        </h5>
+
+                        <p>
+
+                            Nature World
+
+                            <i class="ri-verified-badge-fill verified"></i>
+
+                        </p>
+
+                        <span>
+
+                            1.9M Views • Yesterday
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="editor-card">
+
+                    <a href="error.html">
+
+                        <div class="editor-image">
+
+                            <img src="img15.webp" class="img-fluid">
+
+                            <span class="editor-badge">
+
+                                Featured
+
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <div class="editor-content">
+
+                        <h5>
+
+                            Learn AI From Scratch
+
+                        </h5>
+
+                        <p>
+
+                            Stackly Academy
+
+                            <i class="ri-verified-badge-fill verified"></i>
+
+                        </p>
+
+                        <span>
+
+                            850K Views • 2 Days Ago
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="creator-section py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+                <i class="ri-team-fill text-info"></i>
+                Top Trending Creators
+            </h3>
+
+            <a href="error.html" class="view-all">
+                View All
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+         
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+
+                <div class="creator-card">
+
+                    <a href="error.html">
+
+                        <img src="img20.webp" class="creator-img">
+
+                    </a>
+
+                    <h5>
+                        Movie Central
+                        <i class="ri-verified-badge-fill verified"></i>
+                    </h5>
+
+                    <p>12.8M Subscribers</p>
+
+                    <span>248 Videos</span>
+
+                    <a href="error.html" class="subscribe-btn">
+                        <i class="ri-user-add-line"></i>
+                        Subscribe
+                    </a>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+
+                <div class="creator-card">
+
+                    <a href="error.html">
+
+                        <img src="img21.webp" class="creator-img">
+
+                    </a>
+
+                    <h5>
+                        Gaming Zone
+                        <i class="ri-verified-badge-fill verified"></i>
+                    </h5>
+
+                    <p>8.4M Subscribers</p>
+
+                    <span>512 Videos</span>
+
+                    <a href="error.html" class="subscribe-btn">
+                        <i class="ri-user-add-line"></i>
+                        Subscribe
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Creator 3 -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+
+                <div class="creator-card">
+
+                    <a href="error.html">
+
+                        <img src="img12.webp" class="creator-img">
+
+                    </a>
+
+                    <h5>
+                        Nature World
+                        <i class="ri-verified-badge-fill verified"></i>
+                    </h5>
+
+                    <p>5.2M Subscribers</p>
+
+                    <span>320 Videos</span>
+
+                    <a href="error.html" class="subscribe-btn">
+                        <i class="ri-user-add-line"></i>
+                        Subscribe
+                    </a>
+
+                </div>
+
+            </div>
+
+       
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+
+                <div class="creator-card">
+
+                    <a href="error.html">
+
+                        <img src="img22.webp" class="creator-img">
+
+                    </a>
+
+                    <h5>
+                        Stackly Academy
+                        <i class="ri-verified-badge-fill verified"></i>
+                    </h5>
+
+                    <p>2.1M Subscribers</p>
+
+                    <span>180 Videos</span>
+
+                    <a href="error.html" class="subscribe-btn">
+                        <i class="ri-user-add-line"></i>
+                        Subscribe
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer-section">
+
+    <div class="container-fluid">
+
+     
+
+        <div class="footer-top">
+
+            <h2>Unlimited Movies, Live Streams & Originals</h2>
+
+            <p>Join millions of users streaming the world's best content.</p>
+
+            <a href="error.html" class="footer-btn">
+                Start Watching
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <div class="row gy-5">
+
+           
+
+            <div class="col-lg-3 col-md-6">
+
+                <a href="error.html" class="footer-logo">
+
+                    <img src="Adobe Express - file.png" alt="">
+
+                </a>
+
+                <p class="footer-desc">
+
+                    Watch. Create. Inspire.
+
+                </p>
+
+            </div>
+
+          
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Explore</h5>
+
+                <ul>
+
+                    <li><a href="error.html">Movies</a></li>
+
+                    <li><a href="error.html">Gaming</a></li>
+
+                    <li><a href="error.html">Music</a></li>
+
+                    <li><a href="error.html">Trending</a></li>
+
+                    <li><a href="error.html">Live</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Company</h5>
+
+                <ul>
+
+                    <li><a href="error.html">About</a></li>
+
+                    <li><a href="error.html">Careers</a></li>
+
+                    <li><a href="error.html">Privacy</a></li>
+
+                    <li><a href="error.html">Terms</a></li>
+
+                    <li><a href="error.html">Help Center</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Community</h5>
+
+                <ul>
+
+                    <li><a href="error.html">Creators</a></li>
+
+                    <li><a href="error.html">Partners</a></li>
+
+                    <li><a href="error.html">Developers</a></li>
+
+                    <li><a href="error.html">Blog</a></li>
+
+                    <li><a href="error.html">Support</a></li>
+
+                </ul>
+
+            </div>
+
+          
+
+            <div class="col-lg-3 col-md-6">
+
+                <h5>Download App</h5>
+
+                <a href="error.html" class="download-btn">
+
+                    <i class="ri-google-play-fill"></i>
+
+                    Google Play
+
+                </a>
+
+                <a href="error.html" class="download-btn">
+
+                    <i class="ri-apple-fill"></i>
+
+                    App Store
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+      
+
+        <div class="footer-bottom">
+
+            <p>
+
+              &copy; 2026 Stackly. All Rights Reserved.
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="error.html"><i class="ri-instagram-line"></i></a>
+
+                <a href="error.html"><i class="ri-youtube-line"></i></a>
+
+                <a href="error.html"><i class="ri-facebook-circle-line"></i></a>
+
+                <a href="error.html"><i class="ri-twitter-x-line"></i></a>
+
+                <a href="error.html"><i class="ri-linkedin-box-line"></i></a>
+
+            </div>
+
+            <a href="#" class="top-btn">
+
+                <i class="ri-arrow-up-line"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init();
+
+</script>
+
+<script>
+
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.querySelector(".loader").classList.add("hide");
+
+},800);
+
+});
+
+
+const menu = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
+
+menu.addEventListener("click", () => {
+
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    
+    if (window.innerWidth <= 991) {
+        document.body.classList.toggle("no-scroll");
+    }
+
+});
+
+overlay.addEventListener("click", () => {
+
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("no-scroll");
+
+});
+
+window.addEventListener("resize", () => {
+
+    if (window.innerWidth > 991) {
+
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+
+    }
+
+});
+
+setTimeout(()=>{
+
+Swal.fire({
+
+title:"Welcome ",
+
+text:"Welcome to Stackly",
+
+icon:"success",
+
+confirmButtonColor:"#00d4ff",
+
+background:"#161B22",
+
+color:"#fff"
+
+})
+
+},1200);
+
+
+gsap.from(".logo",{
+
+opacity:0,
+
+x:-60,
+
+duration:1
+
+});
+
+gsap.from(".search-box",{
+
+opacity:0,
+
+y:-40,
+
+duration:1,
+
+delay:.3
+
+});
+
+gsap.from(".right-nav",{
+
+opacity:0,
+
+x:60,
+
+duration:1,
+
+delay:.5
+
+});
+
+gsap.from(".hero-overlay",{
+
+opacity:0,
+
+y:100,
+
+duration:1.2,
+
+delay:.8
+
+});
+</script>
+
+</body>
+</html>

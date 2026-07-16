@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Home-OTT</title>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="setting.css">
+
+
+</head>
+
+<body>
+
+
+<div class="loader">
+<div class="spinner-border text-info"></div>
+</div>
+
+
+<div class="overlay"></div>
+
+
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+
+<div class="container-fluid">
+
+<div class="left-nav">
+
+<button class="menu-btn">
+
+<i class="ri-menu-3-line"></i>
+
+</button>
+
+<a href="index.html" class="logo">
+    <img src="Adobe Express - file.png" alt="StreamHub Logo">
+    
+</a>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search videos">
+
+<button>
+
+<i class="ri-search-line"></i>
+
+</button>
+
+</div>
+<div class="right-nav">
+
+    <a href="error.html" class="icon-btn" title="Upload">
+        <i class="ri-upload-cloud-line"></i>
+    </a>
+
+    <a href="error.html" class="icon-btn notification-btn" title="Notifications">
+        <i class="ri-notification-3-line"></i>
+        <span class="badge">3</span>
+    </a>
+
+    <a href="error.html" title="Profile">
+        <img src="https://i.pravatar.cc/40" alt="Profile" class="profile">
+    </a>
+
+</div>
+
+</nav>
+
+
+<div class="sidebar" id="sidebar">
+
+    <ul>
+
+        <li >
+            <a href="index.html">
+                <i class="ri-home-5-line"></i>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="trending.html">
+                <i class="ri-fire-line"></i>
+                <span>Trending</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="explore.html">
+                <i class="ri-compass-3-line"></i>
+                <span>Explore</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="subscriptions.html">
+                <i class="ri-video-line"></i>
+                <span>Subscriptions</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="history.html">
+                <i class="ri-history-line"></i>
+                <span>History</span>
+            </a>
+        </li>
+
+        <li >
+            <a href="liked.html">
+                <i class="ri-heart-3-line"></i>
+                <span>Liked</span>
+            </a>
+        </li>
+
+       
+
+        <li class="active">
+            <a href="settings.html">
+                <i class="ri-settings-3-line"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="sidebar-auth mt-4 px-3">
+        <a href="login.html" class="btn btn-outline-info w-100 mb-2">
+            Login
+        </a>
+
+        <a href="register.html" class="btn btn-info w-100">
+            Sign Up
+        </a>
+    </div>
+
+</div>
+
+
+<main class="main-content">
+
+<section class="settings-hero">
+
+    <div class="container-fluid">
+
+        <div class="row align-items-center gy-5">
+
+         
+
+            <div class="col-lg-6 hero-content">
+
+                <span class="hero-tag">
+
+                    <i class="ri-settings-3-fill"></i>
+
+                    Account Settings
+
+                </span>
+
+                <h1>
+
+                    Manage Your
+
+                    <span>StreamHub</span>
+
+                    Experience
+
+                </h1>
+
+                <p>
+
+                    Customize your profile, notifications, privacy,
+                    playback quality and connected devices from one place.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="error.html"
+                       class="btn btn-info btn-lg">
+
+                        <i class="ri-save-3-fill"></i>
+
+                        Save Changes
+
+                    </a>
+
+                    <a href="error.html"
+                       class="btn btn-outline-light btn-lg">
+
+                        <i class="ri-refresh-line"></i>
+
+                        Reset Settings
+
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <h3>90%</h3>
+
+                        <span>Profile Completed</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>12</h3>
+
+                        <span>Connected Devices</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>8</h3>
+
+                        <span>Privacy Controls</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+      
+
+            <!-- <div class="col-lg-6 text-center">
+
+                <img src="images/settings-hero.webp"
+                     class="img-fluid hero-image"
+                     alt="Settings">
+
+            </div> -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="profile-settings py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-user-settings-fill text-info"></i>
+
+                Profile Settings
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                Edit Profile
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="profile-card">
+
+            <div class="row align-items-center gy-5">
+
+               
+
+                <div class="col-lg-4 text-center">
+
+                    <div class="profile-image-box">
+
+                        <img src="img41.webp"
+                             class="profile-avatar"
+                             alt="Profile">
+
+                        <a href="error.html"
+                           class="change-photo">
+
+                            <i class="ri-camera-fill"></i>
+
+                        </a>
+
+                    </div>
+
+                    <h4>Arun Kumar</h4>
+
+                    <p>
+
+                        Java Full Stack Developer
+
+                    </p>
+
+                    <span class="verified-user">
+
+                        <i class="ri-verified-badge-fill"></i>
+
+                        Verified Account
+
+                    </span>
+
+                </div>
+
+          
+
+                <div class="col-lg-8">
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+
+                            <label>Full Name</label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   value="Arun Kumar">
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>Username</label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   value="@arunkumar">
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>Email</label>
+
+                            <input type="email"
+                                   class="form-control"
+                                   value="arun@gmail.com">
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>Phone</label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   value="+91 9876543210">
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>Country</label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   value="India">
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label>Date of Birth</label>
+
+                            <input type="date"
+                                   class="form-control">
+
+                        </div>
+
+                        <div class="col-12">
+
+                            <label>Bio</label>
+
+                            <textarea class="form-control"
+                                      rows="4">Passionate Full Stack Developer building modern web applications.</textarea>
+
+                        </div>
+
+                        <div class="col-12 d-flex gap-3 flex-wrap">
+
+                            <a href="error.html"
+                               class="btn btn-info">
+
+                                <i class="ri-save-3-fill"></i>
+
+                                Save Profile
+
+                            </a>
+
+                            <a href="error.html"
+                               class="btn btn-outline-light">
+
+                                <i class="ri-lock-password-fill"></i>
+
+                                Change Password
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="notification-settings py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-notification-3-fill text-info"></i>
+
+                Notification Preferences
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                Manage All
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="notification-card">
+
+            <div class="notification-item">
+
+                <div class="notification-info">
+
+                    <i class="ri-smartphone-fill"></i>
+
+                    <div>
+
+                        <h5>Push Notifications</h5>
+
+                        <p>Receive notifications on your device.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="notification-item">
+
+                <div class="notification-info">
+
+                    <i class="ri-mail-fill"></i>
+
+                    <div>
+
+                        <h5>Email Notifications</h5>
+
+                        <p>Get important updates via email.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="notification-item">
+
+                <div class="notification-info">
+
+                    <i class="ri-live-fill"></i>
+
+                    <div>
+
+                        <h5>Live Stream Alerts</h5>
+
+                        <p>Notify when your favorite creators go live.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="notification-item">
+
+                <div class="notification-info">
+
+                    <i class="ri-video-upload-fill"></i>
+
+                    <div>
+
+                        <h5>New Upload Alerts</h5>
+
+                        <p>Get notified about newly uploaded videos.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="notification-item">
+
+                <div class="notification-info">
+
+                    <i class="ri-megaphone-fill"></i>
+
+                    <div>
+
+                        <h5>Marketing Emails</h5>
+
+                        <p>Receive offers, news and promotions.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="mt-4">
+
+                <a href="error.html" class="btn btn-info">
+
+                    <i class="ri-save-3-fill"></i>
+
+                    Save Notification Settings
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="appearance-settings py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-palette-fill text-info"></i>
+
+                Appearance Settings
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                Customize
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="appearance-card">
+
+         
+            <div class="setting-row">
+
+                <div class="setting-info">
+
+                    <i class="ri-moon-clear-fill"></i>
+
+                    <div>
+
+                        <h5>Theme</h5>
+
+                        <p>Select your preferred appearance.</p>
+
+                    </div>
+
+                </div>
+
+                <select class="form-select">
+
+                    <option selected>Dark Mode</option>
+
+                    <option>Light Mode</option>
+
+                    <option>System Default</option>
+
+                </select>
+
+            </div>
+
+      
+
+            <div class="setting-row">
+
+                <div class="setting-info">
+
+                    <i class="ri-palette-fill"></i>
+
+                    <div>
+
+                        <h5>Accent Color</h5>
+
+                        <p>Choose your favorite accent color.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="color-options">
+
+                    <span class="color active" style="background:#00d4ff;"></span>
+
+                    <span class="color" style="background:#ff4d6d;"></span>
+
+                    <span class="color" style="background:#22c55e;"></span>
+
+                    <span class="color" style="background:#f59e0b;"></span>
+
+                    <span class="color" style="background:#8b5cf6;"></span>
+
+                </div>
+
+            </div>
+
+      
+
+            <div class="setting-row">
+
+                <div class="setting-info">
+
+                    <i class="ri-font-size"></i>
+
+                    <div>
+
+                        <h5>Font Size</h5>
+
+                        <p>Adjust text readability.</p>
+
+                    </div>
+
+                </div>
+
+                <select class="form-select">
+
+                    <option>Small</option>
+
+                    <option selected>Medium</option>
+
+                    <option>Large</option>
+
+                </select>
+
+            </div>
+
+            <div class="setting-row">
+
+                <div class="setting-info">
+
+                    <i class="ri-magic-fill"></i>
+
+                    <div>
+
+                        <h5>Animations</h5>
+
+                        <p>Enable smooth interface animations.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="mt-4">
+
+                <a href="error.html" class="btn btn-info">
+
+                    <i class="ri-save-3-fill"></i>
+
+                    Save Appearance
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="privacy-settings py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-shield-keyhole-fill text-info"></i>
+
+                Privacy & Security
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                Security Center
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="privacy-card">
+
+     
+
+            <div class="privacy-item">
+
+                <div class="privacy-info">
+
+                    <i class="ri-lock-password-fill"></i>
+
+                    <div>
+
+                        <h5>Change Password</h5>
+
+                        <p>Update your account password regularly.</p>
+
+                    </div>
+
+                </div>
+
+                <a href="error.html" class="btn btn-outline-info">
+
+                    Update
+
+                </a>
+
+            </div>
+
+            <div class="privacy-item">
+
+                <div class="privacy-info">
+
+                    <i class="ri-shield-check-fill"></i>
+
+                    <div>
+
+                        <h5>Two-Factor Authentication</h5>
+
+                        <p>Add an extra layer of account security.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+         
+
+            <div class="privacy-item">
+
+                <div class="privacy-info">
+
+                    <i class="ri-eye-off-fill"></i>
+
+                    <div>
+
+                        <h5>Private Account</h5>
+
+                        <p>Hide your activity from other users.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+         
+
+            <div class="privacy-item">
+
+                <div class="privacy-info">
+
+                    <i class="ri-login-box-fill"></i>
+
+                    <div>
+
+                        <h5>Recent Login Activity</h5>
+
+                        <p>Review devices that recently accessed your account.</p>
+
+                    </div>
+
+                </div>
+
+                <a href="error.html" class="btn btn-outline-info">
+
+                    View
+
+                </a>
+
+            </div>
+
+          
+
+            <div class="privacy-item">
+
+                <div class="privacy-info">
+
+                    <i class="ri-smartphone-fill"></i>
+
+                    <div>
+
+                        <h5>Trusted Devices</h5>
+
+                        <p>Manage all signed-in devices.</p>
+
+                    </div>
+
+                </div>
+
+                <a href="error.html" class="btn btn-outline-info">
+
+                    Manage
+
+                </a>
+
+            </div>
+
+      
+
+            <div class="privacy-item">
+
+                <div class="privacy-info">
+
+                    <i class="ri-logout-box-r-fill"></i>
+
+                    <div>
+
+                        <h5>Sign Out Everywhere</h5>
+
+                        <p>Logout from all devices connected to your account.</p>
+
+                    </div>
+
+                </div>
+
+                <a href="error.html" class="btn btn-danger">
+
+                    Logout
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="playback-settings py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-play-circle-fill text-info"></i>
+
+                Playback & Streaming
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                Advanced Settings
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="playback-card">
+
+
+            <div class="playback-item">
+
+                <div class="playback-info">
+
+                    <i class="ri-play-fill"></i>
+
+                    <div>
+
+                        <h5>Autoplay Next Video</h5>
+
+                        <p>Automatically play the next recommended video.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+      
+
+            <div class="playback-item">
+
+                <div class="playback-info">
+
+                    <i class="ri-hd-fill"></i>
+
+                    <div>
+
+                        <h5>Default Video Quality</h5>
+
+                        <p>Select your preferred streaming quality.</p>
+
+                    </div>
+
+                </div>
+
+                <select class="form-select">
+
+                    <option>Auto</option>
+
+                    <option>480p</option>
+
+                    <option>720p HD</option>
+
+                    <option selected>1080p Full HD</option>
+
+                    <option>4K Ultra HD</option>
+
+                </select>
+
+            </div>
+
+            <!-- Playback Speed -->
+
+            <div class="playback-item">
+
+                <div class="playback-info">
+
+                    <i class="ri-speed-up-fill"></i>
+
+                    <div>
+
+                        <h5>Playback Speed</h5>
+
+                        <p>Choose your default playback speed.</p>
+
+                    </div>
+
+                </div>
+
+                <select class="form-select">
+
+                    <option>0.5x</option>
+
+                    <option>0.75x</option>
+
+                    <option selected>1x Normal</option>
+
+                    <option>1.25x</option>
+
+                    <option>1.5x</option>
+
+                    <option>2x</option>
+
+                </select>
+
+            </div>
+
+       
+
+            <div class="playback-item">
+
+                <div class="playback-info">
+
+                    <i class="ri-subtitle"></i>
+
+                    <div>
+
+                        <h5>Closed Captions</h5>
+
+                        <p>Display subtitles while watching videos.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="playback-item">
+
+                <div class="playback-info">
+
+                    <i class="ri-picture-in-picture-2-fill"></i>
+
+                    <div>
+
+                        <h5>Mini Player</h5>
+
+                        <p>Continue watching while browsing StreamHub.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <!-- Data Saver -->
+
+            <div class="playback-item">
+
+                <div class="playback-info">
+
+                    <i class="ri-database-2-fill"></i>
+
+                    <div>
+
+                        <h5>Data Saver Mode</h5>
+
+                        <p>Reduce bandwidth usage on slower networks.</p>
+
+                    </div>
+
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="mt-4">
+
+                <a href="error.html" class="btn btn-info">
+
+                    <i class="ri-save-3-fill"></i>
+
+                    Save Playback Settings
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer-section">
+
+    <div class="container-fluid">
+
+     
+
+        <div class="footer-top">
+
+            <h2>Unlimited Movies, Live Streams & Originals</h2>
+
+            <p>Join millions of users streaming the world's best content.</p>
+
+            <a href="error.html" class="footer-btn">
+                Start Watching
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <div class="row gy-5">
+
+           
+
+            <div class="col-lg-3 col-md-6">
+
+                <a href="error.html" class="footer-logo">
+
+                    <img src="Adobe Express - file.png" alt="">
+
+                </a>
+
+                <p class="footer-desc">
+
+                    Watch. Create. Inspire.
+
+                </p>
+
+            </div>
+
+          
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Explore</h5>
+
+                <ul>
+
+                    <li><a href="error.html">Movies</a></li>
+
+                    <li><a href="error.html">Gaming</a></li>
+
+                    <li><a href="error.html">Music</a></li>
+
+                    <li><a href="error.html">Trending</a></li>
+
+                    <li><a href="error.html">Live</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Company</h5>
+
+                <ul>
+
+                    <li><a href="error.html">About</a></li>
+
+                    <li><a href="error.html">Careers</a></li>
+
+                    <li><a href="error.html">Privacy</a></li>
+
+                    <li><a href="error.html">Terms</a></li>
+
+                    <li><a href="error.html">Help Center</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Community</h5>
+
+                <ul>
+
+                    <li><a href="error.html">Creators</a></li>
+
+                    <li><a href="error.html">Partners</a></li>
+
+                    <li><a href="error.html">Developers</a></li>
+
+                    <li><a href="error.html">Blog</a></li>
+
+                    <li><a href="error.html">Support</a></li>
+
+                </ul>
+
+            </div>
+
+          
+
+            <div class="col-lg-3 col-md-6">
+
+                <h5>Download App</h5>
+
+                <a href="error.html" class="download-btn">
+
+                    <i class="ri-google-play-fill"></i>
+
+                    Google Play
+
+                </a>
+
+                <a href="error.html" class="download-btn">
+
+                    <i class="ri-apple-fill"></i>
+
+                    App Store
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+      
+
+        <div class="footer-bottom">
+
+            <p>
+
+              &copy; 2026 Stackly. All Rights Reserved.
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="error.html"><i class="ri-instagram-line"></i></a>
+
+                <a href="error.html"><i class="ri-youtube-line"></i></a>
+
+                <a href="error.html"><i class="ri-facebook-circle-line"></i></a>
+
+                <a href="error.html"><i class="ri-twitter-x-line"></i></a>
+
+                <a href="error.html"><i class="ri-linkedin-box-line"></i></a>
+
+            </div>
+
+            <a href="#" class="top-btn">
+
+                <i class="ri-arrow-up-line"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init();
+
+</script>
+
+<script>
+
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.querySelector(".loader").classList.add("hide");
+
+},800);
+
+});
+
+
+const menu = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
+
+menu.addEventListener("click", () => {
+
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    if (window.innerWidth <= 991) {
+        document.body.classList.toggle("no-scroll");
+    }
+
+});
+
+overlay.addEventListener("click", () => {
+
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("no-scroll");
+
+});
+
+
+window.addEventListener("resize", () => {
+
+    if (window.innerWidth > 991) {
+
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+
+    }
+
+});
+
+
+
+setTimeout(()=>{
+
+Swal.fire({
+
+title:"Welcome ",
+
+text:"Welcome to Stackly",
+
+icon:"success",
+
+confirmButtonColor:"#00d4ff",
+
+background:"#161B22",
+
+color:"#fff"
+
+})
+
+},1200);
+
+
+gsap.from(".logo",{
+
+opacity:0,
+
+x:-60,
+
+duration:1
+
+});
+
+gsap.from(".search-box",{
+
+opacity:0,
+
+y:-40,
+
+duration:1,
+
+delay:.3
+
+});
+
+gsap.from(".right-nav",{
+
+opacity:0,
+
+x:60,
+
+duration:1,
+
+delay:.5
+
+});
+
+gsap.from(".hero-overlay",{
+
+opacity:0,
+
+y:100,
+
+duration:1.2,
+
+delay:.8
+
+});
+</script>
+
+
+</body>
+</html>

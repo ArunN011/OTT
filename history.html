@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Home-OTT</title>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="history.css">
+
+
+</head>
+
+<body>
+
+
+<div class="loader">
+<div class="spinner-border text-info"></div>
+</div>
+
+
+<div class="overlay"></div>
+
+
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+
+<div class="container-fluid">
+
+<div class="left-nav">
+
+<button class="menu-btn">
+
+<i class="ri-menu-3-line"></i>
+
+</button>
+
+<a href="index.html" class="logo">
+    <img src="Adobe Express - file.png" alt="StreamHub Logo">
+    
+</a>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search videos">
+
+<button>
+
+<i class="ri-search-line"></i>
+
+</button>
+
+</div>
+<div class="right-nav">
+
+    <a href="error.html" class="icon-btn" title="Upload">
+        <i class="ri-upload-cloud-line"></i>
+    </a>
+
+    <a href="error.html" class="icon-btn notification-btn" title="Notifications">
+        <i class="ri-notification-3-line"></i>
+        <span class="badge">3</span>
+    </a>
+
+    <a href="error.html" title="Profile">
+        <img src="https://i.pravatar.cc/40" alt="Profile" class="profile">
+    </a>
+
+</div>
+
+</nav>
+
+
+<div class="sidebar" id="sidebar">
+
+    <ul>
+
+        <li >
+            <a href="index.html">
+                <i class="ri-home-5-line"></i>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="trending.html">
+                <i class="ri-fire-line"></i>
+                <span>Trending</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="explore.html">
+                <i class="ri-compass-3-line"></i>
+                <span>Explore</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="subscriptions.html">
+                <i class="ri-video-line"></i>
+                <span>Subscriptions</span>
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="history.html">
+                <i class="ri-history-line"></i>
+                <span>History</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="liked.html">
+                <i class="ri-heart-3-line"></i>
+                <span>Liked</span>
+            </a>
+        </li>
+
+      
+
+        <li>
+            <a href="settings.html">
+                <i class="ri-settings-3-line"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="sidebar-auth mt-4 px-3">
+        <a href="login.html" class="btn btn-outline-info w-100 mb-2">
+            Login
+        </a>
+
+        <a href="register.html" class="btn btn-info w-100">
+            Sign Up
+        </a>
+    </div>
+
+</div>
+
+
+
+<main class="main-content">
+
+<section class="history-hero">
+
+    <div class="container-fluid">
+
+        <div class="row align-items-center gy-5">
+
+          
+
+            <div class="col-lg-6 hero-content">
+
+                <span class="hero-tag">
+
+                    <i class="ri-history-fill"></i>
+
+                    Watch History
+
+                </span>
+
+                <h1>
+
+                    Continue Watching
+
+                    <span>Your Favorite</span>
+
+                    Videos
+
+                </h1>
+
+                <p>
+
+                    Easily access your recently watched videos,
+                    continue where you left off and manage your
+                    viewing history anytime.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="error.html" class="btn btn-info btn-lg">
+
+                        <i class="ri-play-fill"></i>
+
+                        Continue Watching
+
+                    </a>
+
+                    <a href="error.html" class="btn btn-outline-light btn-lg">
+
+                        <i class="ri-delete-bin-6-line"></i>
+
+                        Clear History
+
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <h3>125</h3>
+
+                        <span>Videos Watched</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>48H</h3>
+
+                        <span>Watch Time</span>
+
+                    </div>
+
+                    <div>
+
+                        <h3>22</h3>
+
+                        <span>Playlists</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6 text-center">
+
+                <img src="img33.webp"
+                     class="img-fluid hero-image"
+                     alt="History">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="history-stats py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-bar-chart-box-fill text-info"></i>
+
+                Your Watch Statistics
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                View Details
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+           
+
+            <div class="col-xl-3 col-md-6">
+
+                <a href="error.html" class="stats-card">
+
+                    <div class="stats-icon">
+
+                        <i class="ri-history-fill"></i>
+
+                    </div>
+
+                    <h2>125</h2>
+
+                    <p>Videos Watched</p>
+
+                </a>
+
+            </div>
+
+         
+            <div class="col-xl-3 col-md-6">
+
+                <a href="error.html" class="stats-card">
+
+                    <div class="stats-icon">
+
+                        <i class="ri-time-fill"></i>
+
+                    </div>
+
+                    <h2>48 Hrs</h2>
+
+                    <p>Total Watch Time</p>
+
+                </a>
+
+            </div>
+
+           
+
+            <div class="col-xl-3 col-md-6">
+
+                <a href="error.html" class="stats-card">
+
+                    <div class="stats-icon">
+
+                        <i class="ri-heart-3-fill"></i>
+
+                    </div>
+
+                    <h2>520</h2>
+
+                    <p>Liked Videos</p>
+
+                </a>
+
+            </div>
+
+         
+
+            <div class="col-xl-3 col-md-6">
+
+                <a href="error.html" class="stats-card">
+
+                    <div class="stats-icon">
+
+                        <i class="ri-play-list-2-fill"></i>
+
+                    </div>
+
+                    <h2>22</h2>
+
+                    <p>Playlists</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="recent-history py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-video-fill text-info"></i>
+
+                Recently Watched
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                View All
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+          
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+
+                <div class="history-card">
+
+                    <a href="error.html">
+
+                        <div class="history-thumb">
+
+                            <img src="img16.webp" alt="Video">
+
+                            <span class="duration">
+
+                                <i class="ri-time-line"></i>
+
+                                18:42
+
+                            </span>
+
+                            <div class="play-overlay">
+
+                                <i class="ri-play-circle-fill"></i>
+
+                            </div>
+
+                            <div class="progress">
+
+                                <div class="progress-bar" style="width:65%"></div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="history-info">
+
+                        <img src="img16.webp"
+                             class="channel-avatar">
+
+                        <div>
+
+                            <h6>
+
+                                The Marvel universe 
+
+                            </h6>
+
+                            <p>
+
+                                Tech Studio
+
+                                <i class="ri-verified-badge-fill verified"></i>
+
+                            </p>
+
+                            <span>
+
+                                <i class="ri-eye-line"></i>
+
+                                13.8M Views • Watched 2 Hours Ago
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+           <div class="col-xl-3 col-lg-4 col-md-6">
+
+                <div class="history-card">
+
+                    <a href="error.html">
+
+                        <div class="history-thumb">
+
+                            <img src="img3.webp" alt="Video">
+
+                            <span class="duration">
+
+                                <i class="ri-time-line"></i>
+
+                                18:42
+
+                            </span>
+
+                            <div class="play-overlay">
+
+                                <i class="ri-play-circle-fill"></i>
+
+                            </div>
+
+                            <div class="progress">
+
+                                <div class="progress-bar" style="width:60%"></div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="history-info">
+
+                        <img src="img18.webp"
+                             class="channel-avatar">
+
+                        <div>
+
+                            <h6>
+
+                                The morning Training
+
+                            </h6>
+
+                            <p>
+
+                                Motivation
+
+                                <i class="ri-verified-badge-fill verified"></i>
+
+                            </p>
+
+                            <span>
+
+                                <i class="ri-eye-line"></i>
+
+                                3.8M Views • Watched 2 Hours Ago
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+
+                <div class="history-card">
+
+                    <a href="error.html">
+
+                        <div class="history-thumb">
+
+                            <img src="img8.webp" alt="Video">
+
+                            <span class="duration">
+
+                                <i class="ri-time-line"></i>
+
+                                18:42
+
+                            </span>
+
+                            <div class="play-overlay">
+
+                                <i class="ri-play-circle-fill"></i>
+
+                            </div>
+
+                            <div class="progress">
+
+                                <div class="progress-bar" style="width:65%"></div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="history-info">
+
+                        <img src="img21.webp"
+                             class="channel-avatar">
+
+                        <div>
+
+                            <h6>
+
+                                The Gaming free fire
+
+                            </h6>
+
+                            <p>
+
+                                Gaming
+
+                                <i class="ri-verified-badge-fill verified"></i>
+
+                            </p>
+
+                            <span>
+
+                                <i class="ri-eye-line"></i>
+
+                                3.8M Views • Watched 2 Hours Ago
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6">
+
+                <div class="history-card">
+
+                    <a href="error.html">
+
+                        <div class="history-thumb">
+
+                            <img src="img5.webp" alt="Video">
+
+                            <span class="duration">
+
+                                <i class="ri-time-line"></i>
+
+                                18:42
+
+                            </span>
+
+                            <div class="play-overlay">
+
+                                <i class="ri-play-circle-fill"></i>
+
+                            </div>
+
+                            <div class="progress">
+
+                                <div class="progress-bar" style="width:65%"></div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="history-info">
+
+                        <img src="img2.webp"
+                             class="channel-avatar">
+
+                        <div>
+
+                            <h6>
+
+                                the Avator
+
+                            </h6>
+
+                            <p>
+
+                                Movie studio
+
+                                <i class="ri-verified-badge-fill verified"></i>
+
+                            </p>
+
+                            <span>
+
+                                <i class="ri-eye-line"></i>
+
+                                23.8M Views • Watched 2 Hours Ago
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="history-timeline py-5">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-calendar-check-fill text-info"></i>
+
+                Watch Timeline
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                View Full History
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="timeline-day">
+
+            <div class="timeline-title">
+
+                <i class="ri-calendar-fill"></i>
+
+                Today
+
+            </div>
+
+            <div class="timeline-item">
+
+                <img src="img15.webp">
+
+                <div>
+
+                    <h5>The Future of AI</h5>
+
+                    <p>Tech Studio <i class="ri-verified-badge-fill verified"></i></p>
+                    <span>Watched • 2 Hours Ago</span>
+
+                </div>
+
+                <a href="error.html" class="watch-btn">
+
+                    Continue
+
+                </a>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <img src="img21.webp">
+
+                <div>
+
+                    <h5>Gaming Highlights</h5>
+
+                    <p>Gaming Zone <i class="ri-verified-badge-fill verified"></i></p>
+
+                    <span>Watched • 5 Hours Ago</span>
+
+                </div>
+
+                <a href="error.html" class="watch-btn">
+
+                    Continue
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-day">
+
+            <div class="timeline-title">
+
+                <i class="ri-calendar-2-fill"></i>
+
+                Yesterday
+
+            </div>
+
+            <div class="timeline-item">
+
+                <img src="img10.webp">
+
+                <div>
+
+                    <h5>Travel Around Japan</h5>
+
+                    <p>Travel World <i class="ri-verified-badge-fill verified"></i></p>
+
+                    <span>Yesterday • 8:20 PM</span>
+
+                </div>
+
+                <a href="error.html" class="watch-btn">
+
+                    Watch Again
+
+                </a>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <img src="img25.webp">
+
+                <div>
+
+                    <h5>Music Festival Live</h5>
+
+                    <p>Music Hub <i class="ri-verified-badge-fill verified"></i></p>
+
+                    <span>Yesterday • 6:45 PM</span>
+
+                </div>
+
+                <a href="error.html" class="watch-btn">
+
+                    Watch Again
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="continue-watching">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <h3>
+
+                <i class="ri-play-circle-fill text-info"></i>
+
+                Continue Watching
+
+            </h3>
+
+            <a href="error.html" class="view-all">
+
+                View All
+
+                <i class="ri-arrow-right-line"></i>
+
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+    
+
+            <div class="col-xl-4 col-lg-6 col-md-6">
+
+                <div class="continue-card">
+
+                    <a href="error.html" class="thumb-link">
+
+                        <div class="continue-thumb">
+
+                            <img src="img34.webp"
+                                 alt="Continue Watching">
+
+                            <span class="video-time">
+
+                                <i class="ri-time-line"></i>
+
+                                42:18
+
+                            </span>
+
+                            <div class="play-overlay">
+
+                                <i class="ri-play-circle-fill"></i>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="continue-content">
+
+                        <h5>
+
+                            Future Technology Documentary
+
+                        </h5>
+
+                        <p>
+
+                            Tech Studio
+
+                            <i class="ri-verified-badge-fill verified"></i>
+
+                        </p>
+
+                        <div class="watch-progress">
+
+                            <div class="custom-progress">
+
+                                <div class="custom-progress-bar"
+                                     style="width:72%">
+
+                                </div>
+
+                            </div>
+
+                            <small>
+
+                                72% Completed
+
+                            </small>
+
+                        </div>
+
+                        <div class="continue-buttons">
+
+                            <a href="error.html"
+                               class="btn btn-info">
+
+                                <i class="ri-play-fill"></i>
+
+                                Resume
+
+                            </a>
+
+                            <a href="error.html"
+                               class="btn btn-outline-light">
+
+                                <i class="ri-bookmark-line"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+           <div class="col-xl-4 col-lg-6 col-md-6">
+
+                <div class="continue-card">
+
+                    <a href="error.html" class="thumb-link">
+
+                        <div class="continue-thumb">
+
+                            <img src="img35.webp"
+                                 alt="Continue Watching">
+
+                            <span class="video-time">
+
+                                <i class="ri-time-line"></i>
+
+                                2:18
+
+                            </span>
+
+                            <div class="play-overlay">
+
+                                <i class="ri-play-circle-fill"></i>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="continue-content">
+
+                        <h5>
+
+                         Leo Trailer
+
+                        </h5>
+
+                        <p>
+
+                            Movie Studio
+
+                            <i class="ri-verified-badge-fill verified"></i>
+
+                        </p>
+
+                        <div class="watch-progress">
+
+                            <div class="custom-progress">
+
+                                <div class="custom-progress-bar"
+                                     style="width:72%">
+
+                                </div>
+
+                            </div>
+
+                            <small>
+
+                                72% Completed
+
+                            </small>
+
+                        </div>
+
+                        <div class="continue-buttons">
+
+                            <a href="error.html"
+                               class="btn btn-info">
+
+                                <i class="ri-play-fill"></i>
+
+                                Resume
+
+                            </a>
+
+                            <a href="error.html"
+                               class="btn btn-outline-light">
+
+                                <i class="ri-bookmark-line"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+
+                <div class="continue-card">
+
+                    <a href="error.html" class="thumb-link">
+
+                        <div class="continue-thumb">
+
+                            <img src="img36.webp"
+                                 alt="Continue Watching">
+
+                            <span class="video-time">
+
+                                <i class="ri-time-line"></i>
+
+                                42:18
+
+                            </span>
+
+                            <div class="play-overlay">
+
+                                <i class="ri-play-circle-fill"></i>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="continue-content">
+
+                        <h5>
+
+                           Spider Bran New Day
+
+                        </h5>
+
+                        <p>
+
+                           Marvel studio
+                            <i class="ri-verified-badge-fill verified"></i>
+
+                        </p>
+
+                        <div class="watch-progress">
+
+                            <div class="custom-progress">
+
+                                <div class="custom-progress-bar"
+                                     style="width:72%">
+
+                                </div>
+
+                            </div>
+
+                            <small>
+
+                                72% Completed
+
+                            </small>
+
+                        </div>
+
+                        <div class="continue-buttons">
+
+                            <a href="error.html"
+                               class="btn btn-info">
+
+                                <i class="ri-play-fill"></i>
+
+                                Resume
+
+                            </a>
+
+                            <a href="error.html"
+                               class="btn btn-outline-light">
+
+                                <i class="ri-bookmark-line"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+
+                <div class="continue-card">
+
+                    <a href="error.html" class="thumb-link">
+
+                        <div class="continue-thumb">
+
+                            <img src="img37.webp"
+                                 alt="Continue Watching">
+
+                            <span class="video-time">
+
+                                <i class="ri-time-line"></i>
+
+                                42:18
+
+                            </span>
+
+                            <div class="play-overlay">
+
+                                <i class="ri-play-circle-fill"></i>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <div class="continue-content">
+
+                        <h5>
+
+                           The Thor Entry 
+
+                        </h5>
+
+                        <p>
+
+                            Marvel
+
+                            <i class="ri-verified-badge-fill verified"></i>
+
+                        </p>
+
+                        <div class="watch-progress">
+
+                            <div class="custom-progress">
+
+                                <div class="custom-progress-bar"
+                                     style="width:72%">
+
+                                </div>
+
+                            </div>
+
+                            <small>
+
+                                72% Completed
+
+                            </small>
+
+                        </div>
+
+                        <div class="continue-buttons">
+
+                            <a href="error.html"
+                               class="btn btn-info">
+
+                                <i class="ri-play-fill"></i>
+
+                                Resume
+
+                            </a>
+
+                            <a href="error.html"
+                               class="btn btn-outline-light">
+
+                                <i class="ri-bookmark-line"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer-section">
+
+    <div class="container-fluid">
+
+     
+
+        <div class="footer-top">
+
+            <h2>Unlimited Movies, Live Streams & Originals</h2>
+
+            <p>Join millions of users streaming the world's best content.</p>
+
+            <a href="error.html" class="footer-btn">
+                Start Watching
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <div class="row gy-5">
+
+           
+
+            <div class="col-lg-3 col-md-6">
+
+                <a href="error.html" class="footer-logo">
+
+                    <img src="Adobe Express - file.png" alt="">
+
+                </a>
+
+                <p class="footer-desc">
+
+                    Watch. Create. Inspire.
+
+                </p>
+
+            </div>
+
+          
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Explore</h5>
+
+                <ul>
+
+                    <li><a href="error.html">Movies</a></li>
+
+                    <li><a href="error.html">Gaming</a></li>
+
+                    <li><a href="error.html">Music</a></li>
+
+                    <li><a href="error.html">Trending</a></li>
+
+                    <li><a href="error.html">Live</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Company</h5>
+
+                <ul>
+
+                    <li><a href="error.html">About</a></li>
+
+                    <li><a href="error.html">Careers</a></li>
+
+                    <li><a href="error.html">Privacy</a></li>
+
+                    <li><a href="error.html">Terms</a></li>
+
+                    <li><a href="error.html">Help Center</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Community</h5>
+
+                <ul>
+
+                    <li><a href="error.html">Creators</a></li>
+
+                    <li><a href="error.html">Partners</a></li>
+
+                    <li><a href="error.html">Developers</a></li>
+
+                    <li><a href="error.html">Blog</a></li>
+
+                    <li><a href="error.html">Support</a></li>
+
+                </ul>
+
+            </div>
+
+          
+
+            <div class="col-lg-3 col-md-6">
+
+                <h5>Download App</h5>
+
+                <a href="error.html" class="download-btn">
+
+                    <i class="ri-google-play-fill"></i>
+
+                    Google Play
+
+                </a>
+
+                <a href="error.html" class="download-btn">
+
+                    <i class="ri-apple-fill"></i>
+
+                    App Store
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+      
+
+        <div class="footer-bottom">
+
+            <p>
+
+              &copy; 2026 Stackly. All Rights Reserved.
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="error.html"><i class="ri-instagram-line"></i></a>
+
+                <a href="error.html"><i class="ri-youtube-line"></i></a>
+
+                <a href="error.html"><i class="ri-facebook-circle-line"></i></a>
+
+                <a href="error.html"><i class="ri-twitter-x-line"></i></a>
+
+                <a href="error.html"><i class="ri-linkedin-box-line"></i></a>
+
+            </div>
+
+            <a href="#" class="top-btn">
+
+                <i class="ri-arrow-up-line"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init();
+
+</script>
+
+<script>
+
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.querySelector(".loader").classList.add("hide");
+
+},800);
+
+});
+
+
+const menu = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
+
+menu.addEventListener("click", () => {
+
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    if (window.innerWidth <= 991) {
+        document.body.classList.toggle("no-scroll");
+    }
+
+});
+
+overlay.addEventListener("click", () => {
+
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("no-scroll");
+
+});
+
+
+window.addEventListener("resize", () => {
+
+    if (window.innerWidth > 991) {
+
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+
+    }
+
+});
+
+
+
+setTimeout(()=>{
+
+Swal.fire({
+
+title:"Welcome ",
+
+text:"Welcome to Stackly",
+
+icon:"success",
+
+confirmButtonColor:"#00d4ff",
+
+background:"#161B22",
+
+color:"#fff"
+
+})
+
+},1200);
+
+
+gsap.from(".logo",{
+
+opacity:0,
+
+x:-60,
+
+duration:1
+
+});
+
+gsap.from(".search-box",{
+
+opacity:0,
+
+y:-40,
+
+duration:1,
+
+delay:.3
+
+});
+
+gsap.from(".right-nav",{
+
+opacity:0,
+
+x:60,
+
+duration:1,
+
+delay:.5
+
+});
+
+gsap.from(".hero-overlay",{
+
+opacity:0,
+
+y:100,
+
+duration:1.2,
+
+delay:.8
+
+});
+</script>
+
+</body>
+
+</html>

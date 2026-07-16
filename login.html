@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+<div class="login-page ">
+
+<div class="container">
+
+    <div class="row justify-content-center align-items-center min-vh-100">
+
+        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10" data-aos="zoom-in">
+
+            <div class="login-card">
+
+<div class="text-center mb-4">
+
+<a href="index.html" class="logo">
+
+<img src="Adobe Express - file.png"
+alt="StreamHub">
+
+</a>
+
+<h2>
+
+<i class="ri-login-circle-fill"></i>
+
+Welcome Back
+
+</h2>
+
+<p>
+
+Sign in to continue watching your favorite videos.
+
+</p>
+
+</div>
+
+<form id="loginForm">
+
+<div class="mb-3">
+
+<label class="form-label">
+
+<i class="ri-user-settings-fill"></i>
+
+Role
+
+</label>
+
+<select class="form-select" id="role" required>
+
+<option value="">Select Role</option>
+
+<option value="Admin">Admin</option>
+
+<option value="User">User</option>
+
+
+
+</select>
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label class="form-label">
+
+<i class="ri-mail-fill"></i>
+
+Email Address
+
+</label>
+
+<input
+type="email"
+id="email"
+class="form-control"
+placeholder="Enter your email"
+required>
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label class="form-label">
+
+<i class="ri-lock-password-fill"></i>
+
+Password
+
+</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="password"
+class="form-control"
+placeholder="Enter password"
+required>
+
+<i class="ri-eye-line toggle-password"
+id="togglePassword"></i>
+
+</div>
+
+</div>
+
+
+<div class="remember-row">
+
+<div class="form-check">
+
+<input
+class="form-check-input"
+type="checkbox"
+id="remember">
+
+<label class="form-check-label">
+
+Remember Me
+
+</label>
+
+</div>
+
+<a href="error.html">
+
+<i class="ri-key-2-fill"></i>
+
+Forgot Password?
+
+</a>
+
+</div>
+
+
+<button
+type="submit"
+class="btn btn-info login-btn w-100">
+
+<i class="ri-login-box-fill"></i>
+
+Login
+
+</button>
+
+
+<a href="index.html"
+class="btn btn-outline-light w-100 mt-3">
+
+<i class="ri-home-5-fill"></i>
+
+Back To Home
+
+</a>
+
+<div class="signup-text">
+
+Don't have an account?
+
+<a href="register.html">
+
+<i class="ri-user-add-fill"></i>
+
+Create Account
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+duration:1000,
+once:true
+});
+
+
+
+
+const password = document.getElementById("password");
+const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", () => {
+
+    if(password.type === "password"){
+
+        password.type = "text";
+
+        togglePassword.classList.remove("ri-eye-line");
+        togglePassword.classList.add("ri-eye-off-line");
+
+    }
+
+    else{
+
+        password.type = "password";
+
+        togglePassword.classList.remove("ri-eye-off-line");
+        togglePassword.classList.add("ri-eye-line");
+
+    }
+
+});
+
+
+window.addEventListener("load",()=>{
+
+    const savedEmail = localStorage.getItem("rememberEmail");
+
+    if(savedEmail){
+
+        document.getElementById("email").value = savedEmail;
+
+        document.getElementById("remember").checked = true;
+
+    }
+
+});
+
+
+
+document.getElementById("loginForm").addEventListener("submit",function(e){
+
+    e.preventDefault();
+
+    const role = document.getElementById("role").value.trim();
+
+    const email = document.getElementById("email").value.trim();
+
+    const pass = document.getElementById("password").value.trim();
+
+    const remember = document.getElementById("remember").checked;
+
+  
+
+    if(role===""){
+
+        Swal.fire({
+
+            icon:"warning",
+
+            title:"Select Role",
+
+            text:"Please select your role."
+
+        });
+
+        return;
+
+    }
+
+ 
+
+    if(email===""){
+
+        Swal.fire({
+
+            icon:"warning",
+
+            title:"Email Required",
+
+            text:"Please enter email."
+
+        });
+
+        return;
+
+    }
+
+   
+
+    const emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailRegex.test(email)){
+
+        Swal.fire({
+
+            icon:"error",
+
+            title:"Invalid Email",
+
+            text:"Enter a valid email address."
+
+        });
+
+        return;
+
+    }
+
+    if(pass===""){
+
+        Swal.fire({
+
+            icon:"warning",
+
+            title:"Password Required",
+
+            text:"Please enter password."
+
+        });
+
+        return;
+
+    }
+
+
+    if(pass.length<6){
+
+        Swal.fire({
+
+            icon:"error",
+
+            title:"Invalid Password",
+
+            text:"Password must contain minimum 6 characters."
+
+        });
+
+        return;
+
+    }
+
+    
+
+    if(remember){
+
+        localStorage.setItem("rememberEmail",email);
+
+    }
+
+    else{
+
+        localStorage.removeItem("rememberEmail");
+
+    }
+
+  
+
+    localStorage.setItem("role",role);
+
+    localStorage.setItem("userEmail",email);
+
+    localStorage.setItem("userName",email.split("@")[0]);
+
+    localStorage.setItem("isLoggedIn","true");
+
+
+
+    Swal.fire({
+
+    icon:"success",
+
+    title:"Login Successful",
+
+    text:"Welcome to StreamHub",
+
+    confirmButtonColor:"#00d4ff"
+
+}).then(()=>{
+
+    if(role==="Admin"){
+
+        window.location.href="admin-dashboard.html";
+
+    }
+
+    else if(role==="User"){
+
+        window.location.href="user-dashboard.html";
+
+    }
+
+    else if(role==="Creator"){
+
+        window.location.href="creator-dashboard.html";
+
+    }
+
+}
+)
+
+});
+</script>
+
+
+
+</body>
+
+</html>

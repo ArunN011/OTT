@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Admin Dashboard</title>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+          rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link rel="stylesheet"
+          href="creator.css">
+
+</head>
+
+<body>
+
+
+<div class="overlay"></div>
+
+
+<nav class="top-navbar">
+
+    <div class="left-navbar">
+
+        <button class="menu-toggle">
+
+            <i class="ri-menu-3-line"></i>
+
+        </button>
+
+        <a href="admin-dashboard.html"
+           class="logo">
+
+            <img src="Adobe Express - file.png"
+                 alt="Stackly">
+
+        </a>
+
+    </div>
+
+    <div class="search-box">
+
+        <input type="text"
+               placeholder="Search videos, users...">
+
+        <button>
+
+            <i class="ri-search-line"></i>
+
+        </button>
+
+    </div>
+
+    <div class="right-navbar">
+
+        <a href="error.html"
+           class="nav-icon">
+
+            <i class="ri-upload-cloud-2-fill"></i>
+
+        </a>
+
+        <a href="error.html"
+           class="nav-icon notification">
+
+            <i class="ri-notification-3-fill"></i>
+
+            <span>8</span>
+
+        </a>
+
+        <a href="error.html">
+
+            <img src="https://i.pravatar.cc/150?img=12"
+                 class="profile-img"
+                 alt="Admin">
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+<aside class="sidebar">
+
+    <div class="sidebar-header">
+
+        <h5>
+
+            <i class="ri-dashboard-fill"></i>
+
+            Admin Panel
+
+        </h5>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+
+            <a href="admin-dashboard.html">
+
+                <i class="ri-dashboard-fill"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="error.html">
+
+                <i class="ri-team-fill"></i>
+
+                Users
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="error.html">
+
+                <i class="ri-video-fill"></i>
+
+                Videos
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="error.html">
+
+                <i class="ri-folder-3-fill"></i>
+
+                Categories
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="error.html">
+
+                <i class="ri-bar-chart-fill"></i>
+
+                Analytics
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="error.html">
+
+                <i class="ri-file-chart-fill"></i>
+
+                Reports
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="error.html">
+
+                <i class="ri-settings-4-fill"></i>
+
+                Settings
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#"
+               id="logoutBtn">
+
+                <i class="ri-logout-box-r-fill"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</aside>
+]
+
+<main class="main-content">
+
+
+<section class="hero-section">
+
+    <div class="container-fluid">
+
+        <div class="row align-items-center gy-5">
+
+         
+
+            <div class="col-lg-7" data-aos="fade-right">
+
+                <span class="hero-badge">
+
+                    <i class="ri-shield-star-fill"></i>
+
+                    Administrator Dashboard
+
+                </span>
+
+                <h1>
+
+                    Welcome Back,
+
+                    <!-- <span class="profile-name">
+
+                        Admin
+
+                    </span> -->
+
+                </h1>
+
+                <p>
+
+                    Manage users, videos, analytics and platform activities from one centralized dashboard.
+
+                </p>
+
+                <div class="admin-info">
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+
+                            <i class="ri-user-settings-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <small>Role</small>
+
+                            <h6 class="profile-role">
+
+                                Admin
+
+                            </h6>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+
+                            <i class="ri-mail-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <small>Email</small>
+
+                            <h6 class="profile-email">
+
+                                admin@gmail.com
+
+                            </h6>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <a href="error.html" class="btn btn-info">
+
+                        <i class="ri-team-fill"></i>
+
+                        Manage Users
+
+                    </a>
+
+                    <a href="error.html" class="btn btn-outline-light">
+
+                        <i class="ri-video-fill"></i>
+
+                        Manage Videos
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- <div class="col-lg-5 text-center" data-aos="fade-left">
+
+                <img src="images/admin-dashboard.webp"
+                     class="img-fluid hero-image"
+                     alt="Admin Dashboard">
+
+            </div> -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-stats">
+
+    <div class="container-fluid">
+
+        <div class="section-title">
+
+            <h3>
+
+                <i class="ri-bar-chart-box-fill"></i>
+
+                Dashboard Overview
+
+            </h3>
+
+        </div>
+
+        <div class="row g-4">
+
+       
+
+            <div class="col-xl-3 col-lg-6 col-md-6">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon users">
+
+                        <i class="ri-team-fill"></i>
+
+                    </div>
+
+                    <div class="stat-content">
+
+                        <h2 id="usersCount">25,840</h2>
+
+                        <p>Total Users</p>
+
+                        <span class="growth up">
+
+                            <i class="ri-arrow-up-line"></i>
+
+                            +12%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-3 col-lg-6 col-md-6">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon videos">
+
+                        <i class="ri-video-fill"></i>
+
+                    </div>
+
+                    <div class="stat-content">
+
+                        <h2 id="videosCount">8,245</h2>
+
+                        <p>Total Videos</p>
+
+                        <span class="growth up">
+
+                            <i class="ri-arrow-up-line"></i>
+
+                            +8%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-3 col-lg-6 col-md-6">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon views">
+
+                        <i class="ri-eye-fill"></i>
+
+                    </div>
+
+                    <div class="stat-content">
+
+                        <h2 id="viewsCount">15.6M</h2>
+
+                        <p>Total Views</p>
+
+                        <span class="growth up">
+
+                            <i class="ri-arrow-up-line"></i>
+
+                            +18%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+       
+
+            <div class="col-xl-3 col-lg-6 col-md-6">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon revenue">
+
+                        <i class="ri-money-dollar-circle-fill"></i>
+
+                    </div>
+
+                    <div class="stat-content">
+
+                        <h2 id="revenueCount">$42K</h2>
+
+                        <p>Revenue</p>
+
+                        <span class="growth down">
+
+                            <i class="ri-arrow-down-line"></i>
+
+                            -3%
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="user-management">
+
+    <div class="container-fluid">
+
+        <div class="section-title">
+
+            <h3>
+
+                <i class="ri-team-fill"></i>
+
+                Recent Users
+
+            </h3>
+
+            <a href="error.html" class="btn btn-info">
+
+                <i class="ri-user-add-fill"></i>
+
+                View All
+
+            </a>
+
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="table admin-table align-middle">
+
+                <thead>
+
+                    <tr>
+
+                        <th>User</th>
+
+                        <th>Email</th>
+
+                        <th>Role</th>
+
+                        <th>Status</th>
+
+                        <th>Joined</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+
+                            <div class="user-info">
+
+                                <img src="https://i.pravatar.cc/150?img=1">
+
+                                <div>
+
+                                    <h6>Arun Kumar</h6>
+
+                                    <small>ID : #USR1001</small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>arun@gmail.com</td>
+
+                        <td>
+
+                            <span class="role-badge admin-role">
+
+                                Admin
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                <i class="ri-checkbox-circle-fill"></i>
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>12 Jul 2026</td>
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button class="view-btn">
+
+                                    <i class="ri-eye-fill"></i>
+
+                                </button>
+
+                                <button class="edit-btn">
+
+                                    <i class="ri-pencil-fill"></i>
+
+                                </button>
+
+                                <button class="delete-btn">
+
+                                    <i class="ri-delete-bin-fill"></i>
+
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            <div class="user-info">
+
+                                <img src="https://i.pravatar.cc/150?img=5">
+
+                                <div>
+
+                                    <h6>Rahul</h6>
+
+                                    <small>ID : #USR1002</small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>rahul@gmail.com</td>
+
+                        <td>
+
+                            <span class="role-badge user-role">
+
+                                User
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status active">
+
+                                <i class="ri-checkbox-circle-fill"></i>
+
+                                Active
+
+                            </span>
+
+                        </td>
+
+                        <td>10 Jul 2026</td>
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button class="view-btn">
+
+                                    <i class="ri-eye-fill"></i>
+
+                                </button>
+
+                                <button class="edit-btn">
+
+                                    <i class="ri-pencil-fill"></i>
+
+                                </button>
+
+                                <button class="delete-btn">
+
+                                    <i class="ri-delete-bin-fill"></i>
+
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            <div class="user-info">
+
+                                <img src="https://i.pravatar.cc/150?img=8">
+
+                                <div>
+
+                                    <h6>Priya</h6>
+
+                                    <small>ID : #USR1003</small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>priya@gmail.com</td>
+
+                        <td>
+
+                            <span class="role-badge user-role">
+
+                                User
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <span class="status inactive">
+
+                                <i class="ri-close-circle-fill"></i>
+
+                                Inactive
+
+                            </span>
+
+                        </td>
+
+                        <td>08 Jul 2026</td>
+
+                        <td>
+
+                            <div class="action-buttons">
+
+                                <button class="view-btn">
+
+                                    <i class="ri-eye-fill"></i>
+
+                                </button>
+
+                                <button class="edit-btn">
+
+                                    <i class="ri-pencil-fill"></i>
+
+                                </button>
+
+                                <button class="delete-btn">
+
+                                    <i class="ri-delete-bin-fill"></i>
+
+                                </button>
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="video-management">
+
+    <div class="container-fluid">
+
+        <div class="section-title">
+
+            <h3>
+
+                <i class="ri-video-fill"></i>
+
+                Latest Uploaded Videos
+
+            </h3>
+
+            <a href="error.html"
+               class="btn btn-info">
+
+                <i class="ri-add-circle-fill"></i>
+
+                Upload Video
+
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+         
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="video-card">
+
+                    <div class="video-image">
+
+                        <img src="img6.webp"
+                             alt="Video">
+
+                        <span class="video-status published">
+
+                            Published
+
+                        </span>
+
+                        <span class="video-duration">
+
+                            12:35
+
+                        </span>
+
+                    </div>
+
+                    <div class="video-content">
+
+                        <h5>
+
+                            Complete HTML Course 2026
+
+                        </h5>
+
+                        <p>
+
+                            Learn HTML from beginner to advanced.
+
+                        </p>
+
+                        <div class="video-details">
+
+                            <span>
+
+                                <i class="ri-eye-fill"></i>
+
+                                245K
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-heart-fill"></i>
+
+                                18K
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-calendar-fill"></i>
+
+                                Jul 12
+
+                            </span>
+
+                        </div>
+
+                        <div class="video-actions">
+
+                            <button class="btn btn-outline-info">
+
+                                <i class="ri-eye-fill"></i>
+
+                            </button>
+
+                            <button class="btn btn-outline-warning">
+
+                                <i class="ri-pencil-fill"></i>
+
+                            </button>
+
+                            <button class="btn btn-outline-danger">
+
+                                <i class="ri-delete-bin-fill"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+      
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="video-card">
+
+                    <div class="video-image">
+
+                        <img src="img42.webp"
+                             alt="Video">
+
+                        <span class="video-status draft">
+
+                            Draft
+
+                        </span>
+
+                        <span class="video-duration">
+
+                            18:20
+
+                        </span>
+
+                    </div>
+
+                    <div class="video-content">
+
+                        <h5>
+
+                            JavaScript ES2026 Tutorial
+
+                        </h5>
+
+                        <p>
+
+                            Modern JavaScript concepts.
+
+                        </p>
+
+                        <div class="video-details">
+
+                            <span>
+
+                                <i class="ri-eye-fill"></i>
+
+                                132K
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-heart-fill"></i>
+
+                                9.5K
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-calendar-fill"></i>
+
+                                Jul 10
+
+                            </span>
+
+                        </div>
+
+                        <div class="video-actions">
+
+                            <button class="btn btn-outline-info">
+
+                                <i class="ri-eye-fill"></i>
+
+                            </button>
+
+                            <button class="btn btn-outline-warning">
+
+                                <i class="ri-pencil-fill"></i>
+
+                            </button>
+
+                            <button class="btn btn-outline-danger">
+
+                                <i class="ri-delete-bin-fill"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+     
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="video-card">
+
+                    <div class="video-image">
+
+                        <img src="img43.webp"
+                             alt="Video">
+
+                        <span class="video-status private">
+
+                            Private
+
+                        </span>
+
+                        <span class="video-duration">
+
+                            08:45
+
+                        </span>
+
+                    </div>
+
+                    <div class="video-content">
+
+                        <h5>
+
+                            React Crash Course
+
+                        </h5>
+
+                        <p>
+
+                            Build modern web apps using React.
+
+                        </p>
+
+                        <div class="video-details">
+
+                            <span>
+
+                                <i class="ri-eye-fill"></i>
+
+                                89K
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-heart-fill"></i>
+
+                                7K
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-calendar-fill"></i>
+
+                                Jul 08
+
+                            </span>
+
+                        </div>
+
+                        <div class="video-actions">
+
+                            <button class="btn btn-outline-info">
+
+                                <i class="ri-eye-fill"></i>
+
+                            </button>
+
+                            <button class="btn btn-outline-warning">
+
+                                <i class="ri-pencil-fill"></i>
+
+                            </button>
+
+                            <button class="btn btn-outline-danger">
+
+                                <i class="ri-delete-bin-fill"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="analytics-section">
+
+    <div class="container-fluid">
+
+        <div class="section-title">
+
+            <h3>
+
+                <i class="ri-bar-chart-grouped-fill"></i>
+
+                Analytics Overview
+
+            </h3>
+
+            <button class="btn btn-info">
+
+                <i class="ri-download-2-fill"></i>
+
+                Download Report
+
+            </button>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-xl-8">
+
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <h5>
+
+                            <i class="ri-line-chart-fill"></i>
+
+                            Monthly Views
+
+                        </h5>
+
+                    </div>
+
+                    <canvas id="viewsChart"></canvas>
+
+                </div>
+
+            </div>
+
+         
+
+            <div class="col-xl-4">
+
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <h5>
+
+                            <i class="ri-money-dollar-circle-fill"></i>
+
+                            Revenue
+
+                        </h5>
+
+                    </div>
+
+                    <canvas id="revenueChart"></canvas>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <h5>
+
+                            <i class="ri-pie-chart-2-fill"></i>
+
+                            Video Categories
+
+                        </h5>
+
+                    </div>
+
+                    <canvas id="categoryChart"></canvas>
+
+                </div>
+
+            </div>
+
+        
+
+            <div class="col-lg-6">
+
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <h5>
+
+                            <i class="ri-user-follow-fill"></i>
+
+                            User Growth
+
+                        </h5>
+
+                    </div>
+
+                    <canvas id="userChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="dashboard-bottom">
+
+    <div class="container-fluid">
+
+        <div class="row g-4">
+
+       
+
+            <div class="col-xl-7">
+
+                <div class="activity-card">
+
+                    <div class="section-title">
+
+                        <h3>
+
+                            <i class="ri-history-fill"></i>
+
+                            Recent Activities
+
+                        </h3>
+
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-icon">
+
+                                <i class="ri-user-add-fill"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h6>New User Registered</h6>
+
+                                <p>Rahul Kumar created a new account.</p>
+
+                                <small>10 Minutes Ago</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-icon">
+
+                                <i class="ri-video-add-fill"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h6>New Video Uploaded</h6>
+
+                                <p>Angular 20 Complete Course published.</p>
+
+                                <small>35 Minutes Ago</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-icon">
+
+                                <i class="ri-delete-bin-fill"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h6>Video Deleted</h6>
+
+                                <p>Old test video removed.</p>
+
+                                <small>Today</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-icon">
+
+                                <i class="ri-shield-check-fill"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h6>Admin Updated Settings</h6>
+
+                                <p>Security policy modified successfully.</p>
+
+                                <small>Yesterday</small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+          
+
+            <div class="col-xl-5">
+
+                <div class="creator-card">
+
+                    <div class="section-title">
+
+                        <h3>
+
+                            <i class="ri-award-fill"></i>
+
+                            Top Creators
+
+                        </h3>
+
+                    </div>
+
+                    <div class="creator-item">
+
+                        <img src="img22.webp">
+
+                        <div>
+
+                            <h6>Tech Studio</h6>
+
+                            <span>12.5M Subscribers</span>
+
+                        </div>
+
+                        <strong>#1</strong>
+
+                    </div>
+
+                    <div class="creator-item">
+
+                        <img src="img21.webp">
+
+                        <div>
+
+                            <h6>Gaming Zone</h6>
+
+                            <span>9.8M Subscribers</span>
+
+                        </div>
+
+                        <strong>#2</strong>
+
+                    </div>
+
+                    <div class="creator-item">
+
+                        <img src="img20.webp">
+
+                        <div>
+
+                            <h6>Movie World</h6>
+
+                            <span>8.6M Subscribers</span>
+
+                        </div>
+
+                        <strong>#3</strong>
+
+                    </div>
+
+                    <div class="creator-item">
+
+                        <img src="img14.webp">
+
+                        <div>
+
+                            <h6>Travel Vlogs</h6>
+
+                            <span>7.2M Subscribers</span>
+
+                        </div>
+
+                        <strong>#4</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-actions">
+
+            <div class="section-title">
+
+                <h3>
+
+                    <i class="ri-flashlight-fill"></i>
+
+                    Quick Actions
+
+                </h3>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <a href="error.html" class="action-box">
+
+                        <i class="ri-video-add-fill"></i>
+
+                        <h5>Upload Video</h5>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <a href="error.html" class="action-box">
+
+                        <i class="ri-user-add-fill"></i>
+
+                        <h5>Add User</h5>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <a href="error.html" class="action-box">
+
+                        <i class="ri-file-chart-fill"></i>
+
+                        <h5>Generate Report</h5>
+
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <a href="error.html" class="action-box">
+
+                        <i class="ri-settings-4-fill"></i>
+
+                        <h5>Settings</h5>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:900,
+
+once:true
+
+});
+
+
+
+const menuToggle = document.querySelector(".menu-toggle");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
+const body = document.body;
+
+
+if(menuToggle){
+
+menuToggle.addEventListener("click",()=>{
+
+sidebar.classList.add("active");
+
+overlay.classList.add("active");
+
+body.classList.add("sidebar-open");
+
+});
+
+}
+
+
+function closeSidebar(){
+
+sidebar.classList.remove("active");
+
+overlay.classList.remove("active");
+
+body.classList.remove("sidebar-open");
+
+}
+
+if(overlay){
+
+overlay.addEventListener("click",closeSidebar);
+
+}
+
+document.querySelectorAll(".sidebar a").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+if(window.innerWidth<=991){
+
+closeSidebar();
+
+}
+
+});
+
+});
+
+
+window.addEventListener("resize",()=>{
+
+if(window.innerWidth>991){
+
+closeSidebar();
+
+}
+
+});
+
+
+
+const adminName=
+localStorage.getItem("userName") || "Administrator";
+
+const adminRole=
+localStorage.getItem("role") || "Admin";
+
+const adminEmail=
+localStorage.getItem("userEmail") || "admin@gmail.com";
+
+
+
+if(localStorage.getItem("role")!=="Admin"){
+
+Swal.fire({
+
+icon:"warning",
+
+title:"Access Denied",
+
+text:"Please login as Admin.",
+
+confirmButtonColor:"#00d4ff"
+
+}).then(()=>{
+
+window.location.href="login.html";
+
+});
+
+}
+
+
+const profileName=document.querySelector(".profile-name");
+
+const profileRole=document.querySelector(".profile-role");
+
+const profileEmail=document.querySelector(".profile-email");
+
+if(profileName){
+
+profileName.textContent=adminName;
+
+}
+
+if(profileRole){
+
+profileRole.textContent=adminRole;
+
+}
+
+if(profileEmail){
+
+profileEmail.textContent=adminEmail;
+
+}
+
+
+const logoutBtn=document.getElementById("logoutBtn");
+
+if(logoutBtn){
+
+logoutBtn.addEventListener("click",(e)=>{
+
+e.preventDefault();
+
+Swal.fire({
+
+title:"Logout?",
+
+text:"Do you want to logout?",
+
+icon:"question",
+
+showCancelButton:true,
+
+confirmButtonColor:"#00d4ff",
+
+cancelButtonColor:"#ef4444",
+
+confirmButtonText:"Logout"
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+localStorage.removeItem("userName");
+
+localStorage.removeItem("userEmail");
+
+localStorage.removeItem("role");
+
+localStorage.removeItem("isLoggedIn");
+
+Swal.fire({
+
+icon:"success",
+
+title:"Logged Out",
+
+timer:1200,
+
+showConfirmButton:false
+
+});
+
+setTimeout(()=>{
+
+window.location.href="login.html";
+
+},1200);
+
+}
+
+});
+
+});
+
+}
+
+
+Chart.defaults.color="#9ca3af";
+Chart.defaults.font.family="Poppins";
+
+
+
+const viewsCtx=document.getElementById("viewsChart");
+
+if(viewsCtx){
+
+new Chart(viewsCtx,{
+
+type:"line",
+
+data:{
+
+labels:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+
+datasets:[{
+
+label:"Views",
+
+data:[12000,18000,22000,26000,24000,30000,34000,39000,43000,47000,51000,56000],
+
+borderColor:"#00d4ff",
+
+backgroundColor:"rgba(0,212,255,.15)",
+
+fill:true,
+
+tension:.4,
+
+borderWidth:3,
+
+pointRadius:5,
+
+pointBackgroundColor:"#00d4ff"
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+maintainAspectRatio:false,
+
+plugins:{
+
+legend:{
+
+display:false
+
+}
+
+},
+
+scales:{
+
+x:{
+
+grid:{
+
+display:false
+
+}
+
+},
+
+y:{
+
+beginAtZero:true,
+
+grid:{
+
+color:"rgba(255,255,255,.05)"
+
+}
+
+}
+
+}
+
+}
+
+});
+
+}
+
+
+
+const revenueCtx=document.getElementById("revenueChart");
+
+if(revenueCtx){
+
+new Chart(revenueCtx,{
+
+type:"bar",
+
+data:{
+
+labels:["Jan","Feb","Mar","Apr","May","Jun"],
+
+datasets:[{
+
+label:"Revenue",
+
+data:[4000,5200,6100,7000,8200,9400],
+
+backgroundColor:"#22c55e",
+
+borderRadius:10
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+maintainAspectRatio:false,
+
+plugins:{
+
+legend:{
+
+display:false
+
+}
+
+},
+
+scales:{
+
+x:{
+
+grid:{
+
+display:false
+
+}
+
+},
+
+y:{
+
+beginAtZero:true,
+
+grid:{
+
+color:"rgba(255,255,255,.05)"
+
+}
+
+}
+
+}
+
+}
+
+});
+
+}
+
+
+
+const categoryCtx=document.getElementById("categoryChart");
+
+if(categoryCtx){
+
+new Chart(categoryCtx,{
+
+type:"pie",
+
+data:{
+
+labels:[
+
+"Education",
+
+"Gaming",
+
+"Music",
+
+"Movies",
+
+"Technology"
+
+],
+
+datasets:[{
+
+data:[30,20,15,18,17],
+
+backgroundColor:[
+
+"#00d4ff",
+
+"#22c55e",
+
+"#f59e0b",
+
+"#ef4444",
+
+"#8b5cf6"
+
+]
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+maintainAspectRatio:false
+
+}
+
+});
+
+}
+
+
+
+const userCtx=document.getElementById("userChart");
+
+if(userCtx){
+
+new Chart(userCtx,{
+
+type:"doughnut",
+
+data:{
+
+labels:[
+
+"Premium",
+
+"Free"
+
+],
+
+datasets:[{
+
+data:[35,65],
+
+backgroundColor:[
+
+"#00d4ff",
+
+"#374151"
+
+],
+
+borderWidth:0
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+maintainAspectRatio:false,
+
+cutout:"70%"
+
+}
+
+});
+
+}
+
+</script>
+
+
+</body>
+
+</html>
